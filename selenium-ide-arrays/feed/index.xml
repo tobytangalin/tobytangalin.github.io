@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Selenium IDE Arrays	</title>
+	<atom:link href="/selenium-ide-arrays/feed/" rel="self" type="application/rss+xml" />
+	<link>/selenium-ide-arrays/?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=selenium-ide-arrays</link>
+	<description></description>
+	<lastBuildDate>Wed, 30 Nov 2022 10:55:33 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<item>
+		<title>
+		By: John M		</title>
+		<link>/selenium-ide-arrays/#comment-711</link>
+
+		<dc:creator><![CDATA[John M]]></dc:creator>
+		<pubDate>Wed, 30 Nov 2022 10:55:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-711</guid>
+
+					<description><![CDATA[Good morning,
+  Is it possible to have a multidimensional array in selenium ide?  I want to pass multiple values into a page on a web application and then do an assert against a calculation on the next page. So for example on page 1, I might want to pass 1 and 2, and assert that on the next page, the answer is 3.  I’ll have hundreds of these combinations so I’d like my array to have rows of aval1, Val2 and then the desired result.]]></description>
+			<content:encoded><![CDATA[<p>Good morning,<br />
+  Is it possible to have a multidimensional array in selenium ide?  I want to pass multiple values into a page on a web application and then do an assert against a calculation on the next page. So for example on page 1, I might want to pass 1 and 2, and assert that on the next page, the answer is 3.  I’ll have hundreds of these combinations so I’d like my array to have rows of aval1, Val2 and then the desired result.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: nam		</title>
+		<link>/selenium-ide-arrays/#comment-294</link>
+
+		<dc:creator><![CDATA[nam]]></dc:creator>
+		<pubDate>Tue, 05 Jul 2022 05:25:25 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-294</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/selenium-ide-arrays/#comment-91&quot;&gt;christophertangalin@gmail.com&lt;/a&gt;.
+
+I&#039;ve been trying to solve this issue for 2 days. Thank you!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/selenium-ide-arrays/#comment-91">christophertangalin@gmail.com</a>.</p>
+<p>I&#8217;ve been trying to solve this issue for 2 days. Thank you!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: christophertangalin@gmail.com		</title>
+		<link>/selenium-ide-arrays/#comment-203</link>
+
+		<dc:creator><![CDATA[christophertangalin@gmail.com]]></dc:creator>
+		<pubDate>Tue, 15 Feb 2022 16:23:01 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-203</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/selenium-ide-arrays/#comment-202&quot;&gt;Ileana&lt;/a&gt;.
+
+Hi Ileana, 
+
+You can use locators to find a specific element on a page. Read more about locators here:  
+https://www.guru99.com/locators-in-selenium-ide.html
+https://www.javatpoint.com/selenium-ide-locating-strategies
+
+Once you&#039;ve located the element you would have to figure out a way to access the other element on the same row. How do you decide which element should be accessed? Are there any rules to determine the final element to be accessed (e.g. the element three columns to the left of the initially searched-for element)?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/selenium-ide-arrays/#comment-202">Ileana</a>.</p>
+<p>Hi Ileana, </p>
+<p>You can use locators to find a specific element on a page. Read more about locators here:<br />
+<a href="https://www.guru99.com/locators-in-selenium-ide.html" rel="nofollow ugc">https://www.guru99.com/locators-in-selenium-ide.html</a><br />
+<a href="https://www.javatpoint.com/selenium-ide-locating-strategies" rel="nofollow ugc">https://www.javatpoint.com/selenium-ide-locating-strategies</a></p>
+<p>Once you&#8217;ve located the element you would have to figure out a way to access the other element on the same row. How do you decide which element should be accessed? Are there any rules to determine the final element to be accessed (e.g. the element three columns to the left of the initially searched-for element)?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ileana		</title>
+		<link>/selenium-ide-arrays/#comment-202</link>
+
+		<dc:creator><![CDATA[Ileana]]></dc:creator>
+		<pubDate>Tue, 15 Feb 2022 13:52:12 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-202</guid>
+
+					<description><![CDATA[Hi! nice article! I would like to ask about a problem I am facing: I need to search for an especific element in a column of a table in a web page, and then access another element in the same row but different column. Is there a way to do that? I had found the command &quot;storeElementIndex&quot;, but it seems to be deprecated. Thanks in advance for your help!]]></description>
+			<content:encoded><![CDATA[<p>Hi! nice article! I would like to ask about a problem I am facing: I need to search for an especific element in a column of a table in a web page, and then access another element in the same row but different column. Is there a way to do that? I had found the command &#8220;storeElementIndex&#8221;, but it seems to be deprecated. Thanks in advance for your help!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: christophertangalin@gmail.com		</title>
+		<link>/selenium-ide-arrays/#comment-196</link>
+
+		<dc:creator><![CDATA[christophertangalin@gmail.com]]></dc:creator>
+		<pubDate>Thu, 20 Jan 2022 10:23:05 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-196</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/selenium-ide-arrays/#comment-194&quot;&gt;Robert Packer&lt;/a&gt;.
+
+Glad I could help, cheers!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/selenium-ide-arrays/#comment-194">Robert Packer</a>.</p>
+<p>Glad I could help, cheers!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Robert Packer		</title>
+		<link>/selenium-ide-arrays/#comment-194</link>
+
+		<dc:creator><![CDATA[Robert Packer]]></dc:creator>
+		<pubDate>Thu, 20 Jan 2022 01:21:31 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-194</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/selenium-ide-arrays/#comment-187&quot;&gt;christophertangalin@gmail.com&lt;/a&gt;.
+
+That was a lot of help! Thank you so much.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/selenium-ide-arrays/#comment-187">christophertangalin@gmail.com</a>.</p>
+<p>That was a lot of help! Thank you so much.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: christophertangalin@gmail.com		</title>
+		<link>/selenium-ide-arrays/#comment-187</link>
+
+		<dc:creator><![CDATA[christophertangalin@gmail.com]]></dc:creator>
+		<pubDate>Tue, 18 Jan 2022 13:52:22 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-187</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/selenium-ide-arrays/#comment-186&quot;&gt;Robert Packer&lt;/a&gt;.
+
+Yes, it is possible! 
+
+Here&#039;s one way to loop through every single link on a page using the &lt;code&gt;document.links&lt;/code&gt; property. You can access each URL using the &lt;code&gt;href&lt;/code&gt; value. In the example below, I&#039;m echoing every link on Google&#039;s homepage.
+
+Let me know if this helped.
+
+&lt;blockquote class=&quot;imgur-embed-pub&quot; lang=&quot;en&quot; data-id=&quot;a/L2H0QCX&quot; data-context=&quot;false&quot; &gt;&lt;a href=&quot;//imgur.com/a/L2H0QCX&quot; rel=&quot;nofollow ugc&quot;&gt;&lt;/a&gt;&lt;/blockquote&gt;&lt;script async src=&quot;//s.imgur.com/min/embed.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/selenium-ide-arrays/#comment-186">Robert Packer</a>.</p>
+<p>Yes, it is possible! </p>
+<p>Here&#8217;s one way to loop through every single link on a page using the <code>document.links</code> property. You can access each URL using the <code>href</code> value. In the example below, I&#8217;m echoing every link on Google&#8217;s homepage.</p>
+<p>Let me know if this helped.</p>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/L2H0QCX" data-context="false"><p><a href="//imgur.com/a/L2H0QCX" rel="nofollow ugc"></a></p></blockquote>
+<p><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Robert Packer		</title>
+		<link>/selenium-ide-arrays/#comment-186</link>
+
+		<dc:creator><![CDATA[Robert Packer]]></dc:creator>
+		<pubDate>Mon, 17 Jan 2022 19:58:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-186</guid>
+
+					<description><![CDATA[Is it possible to loop through one or more links on a page? The ID&#039;s are never the same but I guess that&#039;s another issue.]]></description>
+			<content:encoded><![CDATA[<p>Is it possible to loop through one or more links on a page? The ID&#8217;s are never the same but I guess that&#8217;s another issue.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: christophertangalin@gmail.com		</title>
+		<link>/selenium-ide-arrays/#comment-157</link>
+
+		<dc:creator><![CDATA[christophertangalin@gmail.com]]></dc:creator>
+		<pubDate>Wed, 29 Sep 2021 10:26:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-157</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/selenium-ide-arrays/#comment-156&quot;&gt;Tim&lt;/a&gt;.
+
+Hi Tim, are you trying to capture the element value or the element index?
+
+Perhaps a counter could be used to keep track of the last created element? 
+
+I&#039;m not sure that I understand your problem correctly though. Would you mind sharing a screenshot of the code in Selenium IDE? You can also send your .ide file to christophertangalin@gmail.com and I will have a look at it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/selenium-ide-arrays/#comment-156">Tim</a>.</p>
+<p>Hi Tim, are you trying to capture the element value or the element index?</p>
+<p>Perhaps a counter could be used to keep track of the last created element? </p>
+<p>I&#8217;m not sure that I understand your problem correctly though. Would you mind sharing a screenshot of the code in Selenium IDE? You can also send your .ide file to <a href="mailto:christophertangalin@gmail.com">christophertangalin@gmail.com</a> and I will have a look at it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tim		</title>
+		<link>/selenium-ide-arrays/#comment-156</link>
+
+		<dc:creator><![CDATA[Tim]]></dc:creator>
+		<pubDate>Wed, 29 Sep 2021 10:05:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=74#comment-156</guid>
+
+					<description><![CDATA[Good afternoon. Please tell me how to catch the last created element using the Selenium IDE:
+
+type
+name = name
+New Division
+
+clickAndWait
+css = # form-add&#062; input.btn.btn-primary
+
+assertValue
+// input [@ name = ’roles [362] [name]’]
+New Division
+
+When adding a new element, the locator for it is created on the basis of +1
+that is, only the numerical value changes.
+For xpath it looks like this: // input [@ name = ’roles [362] [name]’] the next element created will have xpath // input [@ name = ’roles [363] [name]’]
+Actually the question is: how to catch the last created element, which is the element with the maximum chill value?
+I would be very grateful if you can help me figure it out.]]></description>
+			<content:encoded><![CDATA[<p>Good afternoon. Please tell me how to catch the last created element using the Selenium IDE:</p>
+<p>type<br />
+name = name<br />
+New Division</p>
+<p>clickAndWait<br />
+css = # form-add&gt; input.btn.btn-primary</p>
+<p>assertValue<br />
+// input [@ name = ’roles [362] [name]’]<br />
+New Division</p>
+<p>When adding a new element, the locator for it is created on the basis of +1<br />
+that is, only the numerical value changes.<br />
+For xpath it looks like this: // input [@ name = ’roles [362] [name]’] the next element created will have xpath // input [@ name = ’roles [363] [name]’]<br />
+Actually the question is: how to catch the last created element, which is the element with the maximum chill value?<br />
+I would be very grateful if you can help me figure it out.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
