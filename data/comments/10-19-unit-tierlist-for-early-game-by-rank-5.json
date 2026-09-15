@@ -1,0 +1,38 @@
+[
+ {
+  "id": "20",
+  "parent": "0",
+  "author": "Steve Madden",
+  "date": "2020-09-28T04:22:27+00:00",
+  "date_text": "September 28, 2020 at 4:22 am",
+  "owner": false,
+  "content": "<p>What a shit tier list, like you don’t even have every unit. Looks like you just slapped random characters in random spots.</p>"
+ },
+ {
+  "id": "21",
+  "parent": "20",
+  "author": "[Site Owner]",
+  "date": "2020-09-28T04:35:09+00:00",
+  "date_text": "September 28, 2020 at 4:35 am",
+  "owner": true,
+  "content": "<p>Hi Steve. The author’s tier list is for the “Early Game”, so 4 and 5 cost units weren’t included.  <a href=\"https://www.reddit.com/r/CompetitiveTFT/comments/j0l4n7/1019_unit_tierlist_for_early_game_by_rank_5/\" rel=\"nofollow ugc\">You can contact the author personally with your feedback, questions, and suggestions here.</a> </p>\n<p>Thanks for sharing your feedback, it is appreciated. I’m sorry that you had a poor experience on this site. If you have suggestions or ideas for improvement, I’m all ears.</p>\n<p>Have a great day!</p>\n<p>Christopher</p>"
+ },
+ {
+  "id": "22",
+  "parent": "0",
+  "author": "Stormy",
+  "date": "2020-09-28T08:06:42+00:00",
+  "date_text": "September 28, 2020 at 8:06 am",
+  "owner": false,
+  "content": "<p>Riven?</p>"
+ },
+ {
+  "id": "23",
+  "parent": "22",
+  "author": "[Site owner]",
+  "date": "2020-09-28T08:13:07+00:00",
+  "date_text": "September 28, 2020 at 8:13 am",
+  "owner": true,
+  "content": "<p>The author’s tier list is for the “Early Game”, so 4 and 5 cost units weren’t included. But I think most people can agree that Riven is super strong. 😊😊</p>"
+ }
+]

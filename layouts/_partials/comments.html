@@ -1,0 +1,23 @@
+{{- /* Archived WordPress comments (read-only) + "Comments are closed" contact block. */ -}}
+{{- $slug := .Params.slug | default .File.ContentBaseName -}}
+{{- $comments := index site.Data.comments $slug -}}
+
+{{- if $comments }}
+<section id="comments" class="comments-area">
+  <h2 class="comments-title">{{ len $comments }} thought{{ if ne (len $comments) 1 }}s{{ end }} on
+    &ldquo;{{ .Title }}&rdquo;</h2>
+  <ol class="comment-list">
+    {{- range where $comments "parent" "0" }}
+    {{- partial "comment.html" (dict "c" . "comments" $comments) -}}
+    {{- end }}
+  </ol>
+</section>
+{{- end }}
+
+<div id="respond" class="comment-respond">
+  <h3 id="reply-title" class="comment-reply-title">Comments are closed</h3>
+  <div class="contact-section">
+    <p>To get in touch, find me on
+      <a href="https://www.linkedin.com/in/christophertangalin/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </div>
+</div>

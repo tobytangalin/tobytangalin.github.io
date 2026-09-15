@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<title>Site Grammar</title>
+	<link>https://sitegrammar.com/blog/</link>
+	<description>This author feed has moved. Subscribe to https://sitegrammar.com/feed/index.xml instead.</description>
+	<language>en-US</language>
+	<atom:link href="https://sitegrammar.com/feed/index.xml" rel="self" type="application/rss+xml" />
+</channel>
+</rss>

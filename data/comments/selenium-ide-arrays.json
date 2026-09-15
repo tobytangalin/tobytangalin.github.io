@@ -1,0 +1,443 @@
+[
+ {
+  "id": "13",
+  "parent": "0",
+  "author": "Peter",
+  "date": "2020-08-10T15:26:12+00:00",
+  "date_text": "August 10, 2020 at 3:26 pm",
+  "owner": false,
+  "content": "<p>How do I add a variable say $newFruit to the array? Where $newFruit is defined somewhere as Watermelon for example.  Want to add value of the variable.  TIA</p>"
+ },
+ {
+  "id": "14",
+  "parent": "13",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-08-11T00:14:52+00:00",
+  "date_text": "August 11, 2020 at 12:14 am",
+  "owner": true,
+  "content": "<p>Hi Peter. I’d do it like this:<br/>\nCommand = execute script | Target = return ${myArray}.concat(${newFruit}) | Value = myArray</p>\n<p>You can see a full working example here: </p>\n<blockquote class=\"imgur-embed-pub\" data-context=\"false\" data-id=\"a/E7LiHZC\" lang=\"en\"><p><a href=\"//imgur.com/a/E7LiHZC\" rel=\"nofollow ugc\"></a></p></blockquote>\n<p><script async=\"\" charset=\"utf-8\" src=\"//s.imgur.com/min/embed.js\"></script></p>\n<p>Let me know if it works for you!</p>"
+ },
+ {
+  "id": "15",
+  "parent": "0",
+  "author": "Peter",
+  "date": "2020-08-11T03:06:26+00:00",
+  "date_text": "August 11, 2020 at 3:06 am",
+  "owner": false,
+  "content": "<p>Super that was it.  Don’t know why I could no find that anywhere.<br/>\nAlso how do I get the length of myArray?<br/>\nSay print it after the last echo above(I will be using in a loop)<br/>\nThanks Kindly</p>"
+ },
+ {
+  "id": "16",
+  "parent": "15",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-08-11T04:21:00+00:00",
+  "date_text": "August 11, 2020 at 4:21 am",
+  "owner": true,
+  "content": "<p>Glad it worked for you, Peter! Javascript arrays have a length property; use it like this: </p>\n<p>${myArray.length}</p>\n<p>Example:<br/>\n<strong>Command</strong> – <em>Echo</em><br/>\n<strong>Target</strong> – ${myArray.length}</p>\n<p>Happy automating!</p>"
+ },
+ {
+  "id": "17",
+  "parent": "0",
+  "author": "Peter",
+  "date": "2020-08-11T16:24:52+00:00",
+  "date_text": "August 11, 2020 at 4:24 pm",
+  "owner": false,
+  "content": "<p>Thanks Christopher, I tried so many combinations.  Is there a resource I can use that has this type of info on selenium ide? I looked every where for the length and could not find an example.  Thanks again Peter</p>"
+ },
+ {
+  "id": "18",
+  "parent": "17",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-08-12T18:26:00+00:00",
+  "date_text": "August 12, 2020 at 6:26 pm",
+  "owner": true,
+  "content": "<p>Unfortunately, there aren’t many resources available for some of the questions you might have; that’s why I wrote this article. Stack Overflow and Selenium Slack can be helpful. </p>\n<p><a href=\"https://www.selenium.dev/support/\" rel=\"nofollow ugc\">https://www.selenium.dev/support/</a></p>"
+ },
+ {
+  "id": "24",
+  "parent": "0",
+  "author": "Lammon12392@hotmail.com",
+  "date": "2020-10-15T03:36:02+00:00",
+  "date_text": "October 15, 2020 at 3:36 am",
+  "owner": false,
+  "content": "<p>I’m really impressed together with your writing skills as well as with the format in your blog. Is that this a paid topic or did you customize it your self? Either way stay up the excellent quality writing, it’s uncommon to peer a great weblog like this one these days.</p>"
+ },
+ {
+  "id": "25",
+  "parent": "24",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-10-15T03:54:43+00:00",
+  "date_text": "October 15, 2020 at 3:54 am",
+  "owner": true,
+  "content": "<p>Thanks for the kind words. I wrote it myself. Cheers!</p>"
+ },
+ {
+  "id": "26",
+  "parent": "0",
+  "author": "Neelima",
+  "date": "2020-11-02T15:38:38+00:00",
+  "date_text": "November 2, 2020 at 3:38 pm",
+  "owner": false,
+  "content": "<p>Hi,<br/>\nHow do I print the values of the array dynamically by iterating through them rather than printing them via hardcoded way (echo ${myNewArray[1]})<br/>\nThanks</p>"
+ },
+ {
+  "id": "27",
+  "parent": "26",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-11-02T21:49:28+00:00",
+  "date_text": "November 2, 2020 at 9:49 pm",
+  "owner": true,
+  "content": "<p>You can use Selenium IDE’s <strong>for each</strong> command. Use this format:</p>\n<p><strong>for each | yourArrayName | iteratorName</strong></p>\n<p>Here is a working example:</p>\n<p><img alt=\"for each command iterate array example\" src=\"https://i.imgur.com/N7gAamz.png\"/></p>\n<p>Was this what you were looking for? Please let me know. </p>\n<p>Best  regards,<br/>\nChristopher</p>"
+ },
+ {
+  "id": "28",
+  "parent": "0",
+  "author": "Vytas",
+  "date": "2020-11-06T08:09:40+00:00",
+  "date_text": "November 6, 2020 at 8:09 am",
+  "owner": false,
+  "content": "<p>Hi Christopher, </p>\n<p>I have an issue that I cannot solve on my own. In my application under test there is a dropdown list with 581 value (time zones) which I select by index.  I want to make a loop that goes through all of them. Clicks on dropdown, selects value clicks on it again and then hit “Apply” button. This would really help me out since hardcoding 581 values is not an option for me:))</p>\n<p>IDe generated code below:</p>\n<p>1.run Login script<br/>\n2.click on linkText=Config OK<br/>\n3.click on css=#mnuSystem .col-9 OK<br/>\n4.click on id=systemTimeZone OK<br/>\n5.select on id=systemTimeZone with value index=0 OK<br/>\n6.click on id=systemTimeZone OK<br/>\n7. click on css=.btn OK</p>"
+ },
+ {
+  "id": "29",
+  "parent": "28",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-11-06T11:08:18+00:00",
+  "date_text": "November 6, 2020 at 11:08 am",
+  "owner": true,
+  "content": "<p>Hi Vytas,</p>\n<p>You can use the <strong>times</strong> command to create a loop that will run as many times as you specify. </p>\n<p>You can learn how to use it here: <a href=\"https://www.selenium.dev/selenium-ide/docs/en/introduction/control-flow#times-selenium-ide-docs-en-api-commands-times\" rel=\"nofollow ugc\">https://www.selenium.dev/selenium-ide/docs/en/introduction/control-flow#times-selenium-ide-docs-en-api-commands-times</a></p>\n<p>Let me know if this solves your problem.</p>\n<p>Best regards,<br/>\nChristopher</p>"
+ },
+ {
+  "id": "30",
+  "parent": "29",
+  "author": "Vytas",
+  "date": "2020-11-06T11:15:29+00:00",
+  "date_text": "November 6, 2020 at 11:15 am",
+  "owner": false,
+  "content": "<p>Yeah, I know about the times loop. What I don’t know how to do with this code</p>\n<p>4.click on id=systemTimeZone OK<br/>\n5.select on id=systemTimeZone with value index=0 OK<br/>\n6.click on id=systemTimeZone OK<br/>\n7. click on css=.btn OK</p>\n<p>I need to select index=0 click on the value and click “Apply” and I need to do this +1 for every run until I reach 581 index 🙂</p>"
+ },
+ {
+  "id": "32",
+  "parent": "30",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-11-06T11:25:04+00:00",
+  "date_text": "November 6, 2020 at 11:25 am",
+  "owner": true,
+  "content": "<p>You are able to click the first one but not the second, third, fourth, etc?</p>\n<p>Or you need help writing code that does steps 4 – 7?</p>\n<p>Can you share your .side file?</p>"
+ },
+ {
+  "id": "33",
+  "parent": "32",
+  "author": "Vytas",
+  "date": "2020-11-06T11:37:56+00:00",
+  "date_text": "November 6, 2020 at 11:37 am",
+  "owner": false,
+  "content": "<p>Yeah I need some help with 4-7 steps how to automate them so that every time it would go up by 1 index starting from 0 and going up to 581.<br/>\nNot much of a help from side file since it’s only those steps that I wrote before that needs to be encapsulated in a loop 🙂</p>"
+ },
+ {
+  "id": "34",
+  "parent": "30",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-11-06T12:01:05+00:00",
+  "date_text": "November 6, 2020 at 12:01 pm",
+  "owner": true,
+  "content": "<p>I would create another variable that starts at 0, and increments each time you run the loop.</p>\n<p>Then do something like select on id=systemTimeZone with value index=${counterVariable} instead of using the static value.</p>"
+ },
+ {
+  "id": "35",
+  "parent": "30",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-11-06T12:23:39+00:00",
+  "date_text": "November 6, 2020 at 12:23 pm",
+  "owner": true,
+  "content": "<p>Here is some sample code to get you started:</p>\n<p><img alt=\"times loop example\" src=\"https://i.imgur.com/ArcCOHu.png\"/></p>\n<p>This code clicks on the first 3 dropdown menu items. You will need to add the missing steps.  </p>\n<p>I hope this helps!</p>"
+ },
+ {
+  "id": "36",
+  "parent": "35",
+  "author": "Vytas",
+  "date": "2020-11-06T14:07:00+00:00",
+  "date_text": "November 6, 2020 at 2:07 pm",
+  "owner": false,
+  "content": "<p>Sure that helped :”)</p>"
+ },
+ {
+  "id": "37",
+  "parent": "0",
+  "author": "Sterling",
+  "date": "2020-11-17T04:37:35+00:00",
+  "date_text": "November 17, 2020 at 4:37 am",
+  "owner": false,
+  "content": "<p>Hi there,  You have done an excellent job. I will definitely digg it and personally suggest to my friends.<br/>\nI’m sure they’ll be benefited from this web site.</p>"
+ },
+ {
+  "id": "38",
+  "parent": "37",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-11-17T05:01:57+00:00",
+  "date_text": "November 17, 2020 at 5:01 am",
+  "owner": true,
+  "content": "<p>Appreciate it, glad you found it helpful!</p>"
+ },
+ {
+  "id": "71",
+  "parent": "0",
+  "author": "Alex",
+  "date": "2021-03-17T15:08:41+00:00",
+  "date_text": "March 17, 2021 at 3:08 pm",
+  "owner": false,
+  "content": "<p>Hi Christopher, Thanks for the awesome article.<br/>\nDo you know how I can access an array index via variable?<br/>\nI tried some combinations of : ${MyArray[index]} and ${MyArray[${index}]} but it did not work.<br/>\nWhat would be the proper format for that?</p>"
+ },
+ {
+  "id": "82",
+  "parent": "71",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-03-22T23:31:30+00:00",
+  "date_text": "March 22, 2021 at 11:31 pm",
+  "owner": true,
+  "content": "<p>Hi Alex, sorry for the late reply. Do you want to access the variable stored at a specific index of your array OR are you trying to access the current iterator value? If you want, you could send me a copy of your .side file and I could take a look. </p>\n<p>Cheers,<br/>\nChristopher</p>"
+ },
+ {
+  "id": "86",
+  "parent": "0",
+  "author": "Aks",
+  "date": "2021-03-31T02:14:48+00:00",
+  "date_text": "March 31, 2021 at 2:14 am",
+  "owner": false,
+  "content": "<p>Hi Christopher, Thanks for the awesome article.</p>\n<p>I have created a program which inputs value from an array to a web form and echoes the returned data in the log<br/>\nbut since i have used it in a while loop the log is getting filled with unneeded stuff in between the required stuff<br/>\nhow do i supress some of the lines of code from writing to the log.</p>"
+ },
+ {
+  "id": "89",
+  "parent": "86",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-04-01T13:43:37+00:00",
+  "date_text": "April 1, 2021 at 1:43 pm",
+  "owner": true,
+  "content": "<p>I haven’t actually tried that myself so I’m not too sure. Perhaps they’ll know the answer in the Slack Channel found here: <a href=\"https://www.selenium.dev/support/\" rel=\"nofollow ugc\">https://www.selenium.dev/support/</a><br/>\nLet me know how it goes, cheers!</p>"
+ },
+ {
+  "id": "87",
+  "parent": "0",
+  "author": "roberto vanzetti",
+  "date": "2021-03-31T10:13:01+00:00",
+  "date_text": "March 31, 2021 at 10:13 am",
+  "owner": false,
+  "content": "<p>it will work like this :    ${MyArray}[${index}]</p>"
+ },
+ {
+  "id": "90",
+  "parent": "0",
+  "author": "Nita",
+  "date": "2021-04-07T19:09:58+00:00",
+  "date_text": "April 7, 2021 at 7:09 pm",
+  "owner": false,
+  "content": "<p>Hi Christopher, I have the same problem what Alex. Instead of an index number, I would like to put in this place variable. I tried a couple of combination but it still does not work as I want. </p>\n<p>COMMAND \t \tTARGET \t\t   \t\tVALUE</p>\n<p>store\t\t\tGreen\t\t\t\tvarColour_1<br/>\nstore\t\t\tYellow\t\t\t\tvarColour_2<br/>\nexecute script\t\treturn[${varColour_1},  \tarrayColour<br/>\n\t\t\t        ${varColour_2}]<br/>\n———————————————————————</p>\n<p>store\t\t\t${arrayColour[0]}\t         varY<br/>\necho\t\t\t${varY}</p>\n<p>Log<br/>\necho: Green<br/>\n———————————————————————</p>\n<p>store\t\t\t0\t\t\t\t             index<br/>\nstore\t\t\t${arrayColour[${index}]}\t     varX<br/>\necho\t\t\t${varX}</p>\n<p>Log<br/>\necho: ${arrayColour[${index}]} -&gt; in here I would like to see Green</p>"
+ },
+ {
+  "id": "91",
+  "parent": "90",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-04-08T09:04:34+00:00",
+  "date_text": "April 8, 2021 at 9:04 am",
+  "owner": true,
+  "content": "<p>Hi Nita. I still haven’t figured out how to echo specific array values using another variable as an index. However, I do have a workaround that involves adding an extra step: I use “execute script” to grab the array value at the index specified, then I echo the variable that holds the grabbed value. Please let me know if this workaround solves your problem.</p>\n<blockquote class=\"imgur-embed-pub\" data-context=\"false\" data-id=\"a/FDWETBz\" lang=\"en\"><p><a href=\"//imgur.com/a/FDWETBz\" rel=\"nofollow ugc\"></a></p></blockquote>\n<p><script async=\"\" charset=\"utf-8\" src=\"//s.imgur.com/min/embed.js\"></script></p>\n<p>Best regards,<br/>\nChristopher</p>"
+ },
+ {
+  "id": "92",
+  "parent": "91",
+  "author": "Nita",
+  "date": "2021-04-08T20:11:14+00:00",
+  "date_text": "April 8, 2021 at 8:11 pm",
+  "owner": false,
+  "content": "<p>Thanks! That helped me a lot and solve my next problems!</p>"
+ },
+ {
+  "id": "94",
+  "parent": "92",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-04-09T02:36:43+00:00",
+  "date_text": "April 9, 2021 at 2:36 am",
+  "owner": true,
+  "content": "<p>Glad I could help, cheers!</p>"
+ },
+ {
+  "id": "294",
+  "parent": "91",
+  "author": "nam",
+  "date": "2022-07-05T05:25:25+00:00",
+  "date_text": "July 5, 2022 at 5:25 am",
+  "owner": false,
+  "content": "<p>I’ve been trying to solve this issue for 2 days. Thank you!</p>"
+ },
+ {
+  "id": "108",
+  "parent": "0",
+  "author": "Tztrk",
+  "date": "2021-05-21T13:25:20+00:00",
+  "date_text": "May 21, 2021 at 1:25 pm",
+  "owner": false,
+  "content": "<p>Hi i am glad to find this website but still cant figure it out my problem. Is it possible to call one variable with another? I have list of variable values named like 1,2,3,4,5…. . those variables are actually links. I created a variable as a counter add 1 each of the time and i want to use this to get my links. but i couldnt achive, any idea how to make it? asked it with detail here : <a href=\"https://stackoverflow.com/questions/67636260/selenium-ide-3-17-defining-nested-variable\" rel=\"nofollow ugc\">https://stackoverflow.com/questions/67636260/selenium-ide-3-17-defining-nested-variable</a></p>"
+ },
+ {
+  "id": "110",
+  "parent": "108",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-05-24T14:02:26+00:00",
+  "date_text": "May 24, 2021 at 2:02 pm",
+  "owner": true,
+  "content": "<p>Maybe it’s a better idea to create an array with the links, then add a “for each” loop to iterate through the array and open up each link. </p>\n<p>Here’s some example code:</p>\n<blockquote class=\"imgur-embed-pub\" data-context=\"false\" data-id=\"a/8ZGiQz9\" lang=\"en\"><p><a href=\"//imgur.com/a/8ZGiQz9\" rel=\"nofollow ugc\"></a></p></blockquote>\n<p><script async=\"\" charset=\"utf-8\" src=\"//s.imgur.com/min/embed.js\"></script><br/>\nLet me know if this solves your problem.</p>"
+ },
+ {
+  "id": "111",
+  "parent": "0",
+  "author": "kouadio",
+  "date": "2021-06-05T20:23:35+00:00",
+  "date_text": "June 5, 2021 at 8:23 pm",
+  "owner": false,
+  "content": "<p>bonsoir, je fais des tests sur CRM , j’ai des tableaux dans lesquelles je dois saisir des valeurs. je vais essayer tes méthodes pour voir et je te reviens</p>"
+ },
+ {
+  "id": "112",
+  "parent": "0",
+  "author": "kouadio",
+  "date": "2021-06-05T20:51:48+00:00",
+  "date_text": "June 5, 2021 at 8:51 pm",
+  "owner": false,
+  "content": "<p>I can’t seem to get rid of a simple alert that appears on my page.</p>\n<p>i need help please.</p>"
+ },
+ {
+  "id": "113",
+  "parent": "112",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-06-06T07:50:01+00:00",
+  "date_text": "June 6, 2021 at 7:50 am",
+  "owner": true,
+  "content": "<p>Please share a screenshot here and your code if possible, thanks.</p>"
+ },
+ {
+  "id": "114",
+  "parent": "113",
+  "author": "KOUADIO",
+  "date": "2021-06-07T14:45:19+00:00",
+  "date_text": "June 7, 2021 at 2:45 pm",
+  "owner": false,
+  "content": "<p>command                                             TARGER<br/>\n1. choose ok on next confirmation<br/>\n2. click–&gt;                                             id={920432ec-cb24-5471-9866-dc7d14b917d4}_content<br/>\n3. assert alert       Les comptes du Client s�lectionn� sont d�biteurs. Cliquer sur le lien “D�tails” pour avoir le d�tails des dettes de ce client !<br/>\n4. webdriver choose ok on visible confirmation</p>"
+ },
+ {
+  "id": "115",
+  "parent": "0",
+  "author": "KOUADIO",
+  "date": "2021-06-08T09:38:35+00:00",
+  "date_text": "June 8, 2021 at 9:38 am",
+  "owner": false,
+  "content": "<p>how to add values ​​in two different cells of my table</p>"
+ },
+ {
+  "id": "116",
+  "parent": "115",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-06-08T12:57:08+00:00",
+  "date_text": "June 8, 2021 at 12:57 pm",
+  "owner": true,
+  "content": "<p>Maybe you can <strong>click</strong> OR <strong>click at</strong> the xpath of the cell and use <strong>send keys</strong> to type the values into each cell. I don’t think you can use this for Google Sheets though.  </p>\n<p><a href=\"https://www.selenium.dev/selenium-ide/docs/en/api/commands\" rel=\"nofollow ugc\">https://www.selenium.dev/selenium-ide/docs/en/api/commands</a></p>"
+ },
+ {
+  "id": "147",
+  "parent": "0",
+  "author": "KOUADIO",
+  "date": "2021-09-17T16:14:32+00:00",
+  "date_text": "September 17, 2021 at 4:14 pm",
+  "owner": false,
+  "content": "<p>I want to add the content of a variable and an integer, how to do</p>"
+ },
+ {
+  "id": "155",
+  "parent": "0",
+  "author": "Anonymous",
+  "date": "2021-09-29T10:04:42+00:00",
+  "date_text": "September 29, 2021 at 10:04 am",
+  "owner": false,
+  "content": "<p>Good afternoon. Please tell me how to catch the last created element using the Selenium IDE:</p>\n<p>type<br/>\nname = name<br/>\nNew Division</p>\n<p>clickAndWait<br/>\ncss = # form-add&gt; input.btn.btn-primary</p>\n<p>assertValue<br/>\n// input [@ name = ’roles [362] [name]’]<br/>\nNew Division</p>\n<p>When adding a new element, the locator for it is created on the basis of +1<br/>\nthat is, only the numerical value changes.<br/>\nFor xpath it looks like this: // input [@ name = ’roles [362] [name]’] the next element created will have xpath // input [@ name = ’roles [363] [name]’]<br/>\nActually the question is: how to catch the last created element, which is the element with the maximum chill value?<br/>\nI would be very grateful if you can help me figure it out.</p>"
+ },
+ {
+  "id": "156",
+  "parent": "0",
+  "author": "Tim",
+  "date": "2021-09-29T10:05:48+00:00",
+  "date_text": "September 29, 2021 at 10:05 am",
+  "owner": false,
+  "content": "<p>Good afternoon. Please tell me how to catch the last created element using the Selenium IDE:</p>\n<p>type<br/>\nname = name<br/>\nNew Division</p>\n<p>clickAndWait<br/>\ncss = # form-add&gt; input.btn.btn-primary</p>\n<p>assertValue<br/>\n// input [@ name = ’roles [362] [name]’]<br/>\nNew Division</p>\n<p>When adding a new element, the locator for it is created on the basis of +1<br/>\nthat is, only the numerical value changes.<br/>\nFor xpath it looks like this: // input [@ name = ’roles [362] [name]’] the next element created will have xpath // input [@ name = ’roles [363] [name]’]<br/>\nActually the question is: how to catch the last created element, which is the element with the maximum chill value?<br/>\nI would be very grateful if you can help me figure it out.</p>"
+ },
+ {
+  "id": "157",
+  "parent": "156",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-09-29T10:26:32+00:00",
+  "date_text": "September 29, 2021 at 10:26 am",
+  "owner": true,
+  "content": "<p>Hi Tim, are you trying to capture the element value or the element index?</p>\n<p>Perhaps a counter could be used to keep track of the last created element? </p>\n<p>I’m not sure that I understand your problem correctly though. Would you mind sharing a screenshot of the code in Selenium IDE? You can also send your .ide file to <a href=\"mailto:christophertangalin@gmail.com\">christophertangalin@gmail.com</a> and I will have a look at it.</p>"
+ },
+ {
+  "id": "186",
+  "parent": "0",
+  "author": "Robert Packer",
+  "date": "2022-01-17T19:58:00+00:00",
+  "date_text": "January 17, 2022 at 7:58 pm",
+  "owner": false,
+  "content": "<p>Is it possible to loop through one or more links on a page? The ID’s are never the same but I guess that’s another issue.</p>"
+ },
+ {
+  "id": "187",
+  "parent": "186",
+  "author": "christophertangalin@gmail.com",
+  "date": "2022-01-18T13:52:22+00:00",
+  "date_text": "January 18, 2022 at 1:52 pm",
+  "owner": true,
+  "content": "<p>Yes, it is possible! </p>\n<p>Here’s one way to loop through every single link on a page using the <code>document.links</code> property. You can access each URL using the <code>href</code> value. In the example below, I’m echoing every link on Google’s homepage.</p>\n<p>Let me know if this helped.</p>\n<blockquote class=\"imgur-embed-pub\" data-context=\"false\" data-id=\"a/L2H0QCX\" lang=\"en\"><p><a href=\"//imgur.com/a/L2H0QCX\" rel=\"nofollow ugc\"></a></p></blockquote>\n<p><script async=\"\" charset=\"utf-8\" src=\"//s.imgur.com/min/embed.js\"></script></p>"
+ },
+ {
+  "id": "194",
+  "parent": "187",
+  "author": "Robert Packer",
+  "date": "2022-01-20T01:21:31+00:00",
+  "date_text": "January 20, 2022 at 1:21 am",
+  "owner": false,
+  "content": "<p>That was a lot of help! Thank you so much.</p>"
+ },
+ {
+  "id": "196",
+  "parent": "194",
+  "author": "christophertangalin@gmail.com",
+  "date": "2022-01-20T10:23:05+00:00",
+  "date_text": "January 20, 2022 at 10:23 am",
+  "owner": true,
+  "content": "<p>Glad I could help, cheers!</p>"
+ },
+ {
+  "id": "202",
+  "parent": "0",
+  "author": "Ileana",
+  "date": "2022-02-15T13:52:12+00:00",
+  "date_text": "February 15, 2022 at 1:52 pm",
+  "owner": false,
+  "content": "<p>Hi! nice article! I would like to ask about a problem I am facing: I need to search for an especific element in a column of a table in a web page, and then access another element in the same row but different column. Is there a way to do that? I had found the command “storeElementIndex”, but it seems to be deprecated. Thanks in advance for your help!</p>"
+ },
+ {
+  "id": "203",
+  "parent": "202",
+  "author": "christophertangalin@gmail.com",
+  "date": "2022-02-15T16:23:01+00:00",
+  "date_text": "February 15, 2022 at 4:23 pm",
+  "owner": true,
+  "content": "<p>Hi Ileana, </p>\n<p>You can use locators to find a specific element on a page. Read more about locators here:<br/>\n<a href=\"https://www.guru99.com/locators-in-selenium-ide.html\" rel=\"nofollow ugc\">https://www.guru99.com/locators-in-selenium-ide.html</a><br/>\n<a href=\"https://www.javatpoint.com/selenium-ide-locating-strategies\" rel=\"nofollow ugc\">https://www.javatpoint.com/selenium-ide-locating-strategies</a></p>\n<p>Once you’ve located the element you would have to figure out a way to access the other element on the same row. How do you decide which element should be accessed? Are there any rules to determine the final element to be accessed (e.g. the element three columns to the left of the initially searched-for element)?</p>"
+ },
+ {
+  "id": "711",
+  "parent": "0",
+  "author": "John M",
+  "date": "2022-11-30T10:55:33+00:00",
+  "date_text": "November 30, 2022 at 10:55 am",
+  "owner": false,
+  "content": "<p>Good morning,<br/>\n  Is it possible to have a multidimensional array in selenium ide?  I want to pass multiple values into a page on a web application and then do an assert against a calculation on the next page. So for example on page 1, I might want to pass 1 and 2, and assert that on the next page, the answer is 3.  I’ll have hundreds of these combinations so I’d like my array to have rows of aval1, Val2 and then the desired result.</p>"
+ }
+]

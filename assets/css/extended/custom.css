@@ -1,0 +1,123 @@
+/* Styles for content migrated from WordPress (raw <figure>/<table> blocks). */
+.post-content figure {
+  margin: 1em 0;
+}
+
+.post-content figure.alignright {
+  float: right;
+  margin: 0.25em 0 1em 1.5em;
+}
+
+.post-content figure.alignleft {
+  float: left;
+  margin: 0.25em 1.5em 1em 0;
+}
+
+.post-content figure.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-content figure.wp-block-table {
+  margin: 1.5em 0;
+  overflow-x: auto;
+}
+
+.post-content table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95em;
+}
+
+.post-content table th,
+.post-content table td {
+  border: 1px solid var(--border);
+  padding: 0.45em 0.6em;
+  vertical-align: top;
+}
+
+.post-content table th {
+  background: var(--code-bg);
+}
+
+@media (max-width: 600px) {
+  .post-content figure.alignright,
+  .post-content figure.alignleft {
+    float: none;
+    margin: 1em 0;
+  }
+}
+
+/* Archived WordPress comments (read-only). */
+.comments-area {
+  margin-top: 3em;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5em;
+}
+
+.comments-title {
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+}
+
+ol.comment-list,
+ol.comment-list ol.children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol.comment-list ol.children {
+  margin: 1em 0 0 1.5em;
+  padding-left: 1em;
+  border-left: 2px solid var(--border);
+}
+
+li.comment {
+  margin: 1em 0;
+  padding: 1em 1.25em;
+  background: var(--entry);
+  border-radius: 8px;
+}
+
+li.comment.bypostauthor {
+  border-left: 3px solid var(--primary);
+}
+
+.comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  align-items: baseline;
+  font-size: 0.85em;
+  color: var(--secondary);
+  margin-bottom: 0.5em;
+}
+
+.comment-author {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.comment-content > :first-child {
+  margin-top: 0;
+}
+
+.comment-content > :last-child {
+  margin-bottom: 0;
+}
+
+.comment-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#respond.comment-respond {
+  margin-top: 2.5em;
+}
+

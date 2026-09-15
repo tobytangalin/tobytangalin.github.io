@@ -1,0 +1,77 @@
+baseURL = "https://sitegrammar.com/"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Site Grammar"
+theme = "PaperMod"
+
+# PaperMod handles favicon/robots; Hugo generates robots.txt from this flag.
+enableRobotsTXT = true
+
+# GA4 (was MonsterInsights G-DS881CXGTX).
+googleAnalytics = "G-DS881CXGTX"
+
+# Avoid generating an unused /categories/ term-list page; terms still build.
+disableKinds = ["taxonomy"]
+
+[pagination]
+  pagerSize = 10
+
+# Legacy WordPress URL shapes.
+[permalinks]
+  blog = "/:slug/"
+  categories = "/category/:slug/"
+
+[taxonomies]
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    # Post bodies are migrated from WordPress HTML; allow raw HTML blocks.
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+# Emit RSS at the legacy WordPress /feed/ directory URLs via scripts/relocate-feeds.sh
+# (Hugo's output-format `path` is global, so it cannot produce /<slug>/feed/index.xml).
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+  page = ["HTML", "RSS"]
+
+[params]
+  env = "production"
+  mainSections = ["blog"]
+  comments = true
+  description = "Site Grammar"
+  author = "Christopher Tangalin"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowRssButtonInSectionTermList = true
+  ShowFullTextinRSS = true
+
+  [params.assets]
+    disableFingerprinting = true
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/christophertangalin/"
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 10
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 20
+[[menu.main]]
+  name = "Site Grammar"
+  url = "/"
+  weight = 30

@@ -1,0 +1,38 @@
+[
+ {
+  "id": "48",
+  "parent": "0",
+  "author": "PAWEL PACLAWSKI",
+  "date": "2020-12-30T04:58:01+00:00",
+  "date_text": "December 30, 2020 at 4:58 am",
+  "owner": false,
+  "content": "<p>Very nice guide ! Keep it up bro</p>"
+ },
+ {
+  "id": "49",
+  "parent": "48",
+  "author": "christophertangalin@gmail.com",
+  "date": "2020-12-30T09:19:42+00:00",
+  "date_text": "December 30, 2020 at 9:19 am",
+  "owner": true,
+  "content": "<p>Thank you for your kind words! Glad to help!</p>"
+ },
+ {
+  "id": "50",
+  "parent": "0",
+  "author": "B",
+  "date": "2020-12-30T15:55:39+00:00",
+  "date_text": "December 30, 2020 at 3:55 pm",
+  "owner": false,
+  "content": "<p>This is honestly great analysis</p>"
+ },
+ {
+  "id": "51",
+  "parent": "50",
+  "author": "christophertangalin@gmail.com",
+  "date": "2021-01-01T08:19:01+00:00",
+  "date_text": "January 1, 2021 at 8:19 am",
+  "owner": true,
+  "content": "<p>Thanks! I’m happy to hear that you found it helpful. Cheers!</p>"
+ }
+]

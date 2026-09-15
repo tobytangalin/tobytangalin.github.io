@@ -1,0 +1,19 @@
+{{- $c := .c -}}
+{{- $comments := .comments -}}
+<li id="comment-{{ $c.id }}" class="comment{{ if $c.owner }} bypostauthor{{ end }}">
+  <div class="comment-meta">
+    <span class="comment-author">{{ $c.author }}</span>
+    <a class="comment-time" href="#comment-{{ $c.id }}">
+      <time datetime="{{ $c.date }}">{{ $c.date_text }}</time>
+    </a>
+  </div>
+  <div class="comment-content">{{ $c.content | safeHTML }}</div>
+  {{- $children := where $comments "parent" $c.id -}}
+  {{- if $children }}
+  <ol class="children">
+    {{- range $children }}
+    {{- partial "comment.html" (dict "c" . "comments" $comments) -}}
+    {{- end }}
+  </ol>
+  {{- end }}
+</li>
