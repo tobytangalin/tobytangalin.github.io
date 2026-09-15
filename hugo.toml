@@ -13,6 +13,11 @@ googleAnalytics = "G-DS881CXGTX"
 # Avoid generating an unused /categories/ term-list page; terms still build.
 disableKinds = ["taxonomy"]
 
+# Respect the browser Do Not Track signal for GA4.
+[privacy]
+  [privacy.googleAnalytics]
+    respectDoNotTrack = true
+
 [pagination]
   pagerSize = 10
 
@@ -42,7 +47,10 @@ disableKinds = ["taxonomy"]
   page = ["HTML", "RSS"]
 
 [params]
-  env = "production"
+  # No `env = "production"` override. PaperMod/Hugo emit GA4, OpenGraph, Twitter
+  # and JSON-LD only when hugo.IsProduction. `hugo server` runs in "development",
+  # so local previews no longer send hits to the live GA property, while `hugo`
+  # and CI builds (production) still do.
   mainSections = ["blog"]
   comments = true
   description = "Site Grammar"
