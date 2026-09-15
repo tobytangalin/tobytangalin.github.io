@@ -35,6 +35,8 @@ Our wedding ceremony is scheduled at 11:30 AM, however, it may be slightly delay
   * ~~Last time we checked, there is a limit of 25 people allowed in the wedding hall. Unless the regulations have changed, the children (or sacrificial volunteers) may have to wait outside during the ceremony.~~ Update: the capacity limit has been lifted, so everyone can join in the ceremony! PTL!
   * Please take a COVID-19 (rapid, PCR, or antibody) test within the 48 hours prior to the wedding for everyone's safety and peace of mind.
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.4036665242005!2d12.53159356775326!3d55.67830061234763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253bc58aa66b3%3A0xb3f0c4fc7ce10181!2sFrederiksberg%20Town%20Hall!5e0!3m2!1sen!2sdk!4v1629020577626!5m2!1sen!2sdk" width="400" height="300" style="border:0;max-width:100%;" allowfullscreen="" loading="lazy"></iframe>
+
 ## [Lunch at San Marco Junior](https://goo.gl/maps/EiA3NM1iFaGMbM6T7) (12:30 NN - 3:30 PM)
 
 <figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="640" height="755" src="/wp-content/uploads/2021/08/120329395_122482822701901_2495433929226886427_n-1.jpg" alt="" class="wp-image-695" srcset="/wp-content/uploads/2021/08/120329395_122482822701901_2495433929226886427_n-1.jpg 640w, /wp-content/uploads/2021/08/120329395_122482822701901_2495433929226886427_n-1-254x300.jpg 254w" sizes="(max-width: 640px) 100vw, 640px" /></figure>
