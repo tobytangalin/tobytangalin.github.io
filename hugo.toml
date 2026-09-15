@@ -1,5 +1,5 @@
 baseURL = "https://sitegrammar.com/"
-languageCode = "en-us"
+locale = "en-US"
 defaultContentLanguage = "en"
 title = "Site Grammar"
 theme = "PaperMod"
@@ -40,7 +40,7 @@ disableKinds = ["taxonomy"]
 # Emit RSS at the legacy WordPress /feed/ directory URLs via scripts/relocate-feeds.sh
 # (Hugo's output-format `path` is global, so it cannot produce /<slug>/feed/index.xml).
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
@@ -66,6 +66,12 @@ disableKinds = ["taxonomy"]
 
   [params.assets]
     disableFingerprinting = true
+    # Reuse the old WordPress site icon; PaperMod hard-codes these default names.
+    favicon = "/wp-content/uploads/2020/01/toby_streams-150x150.jpg"
+    favicon16x16 = "/wp-content/uploads/2020/01/toby_streams-150x150.jpg"
+    favicon32x32 = "/wp-content/uploads/2020/01/toby_streams-150x150.jpg"
+    apple_touch_icon = "/wp-content/uploads/2020/01/toby_streams.jpg"
+    safari_pinned_tab = "/wp-content/uploads/2020/01/toby_streams.jpg"
 
   [[params.socialIcons]]
     name = "linkedin"
@@ -79,6 +85,10 @@ disableKinds = ["taxonomy"]
   name = "Blog"
   url = "/blog/"
   weight = 20
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 25
 [[menu.main]]
   name = "Site Grammar"
   url = "/"

@@ -1,6 +1,6 @@
 {{- /* Archived WordPress comments (read-only) + "Comments are closed" contact block. */ -}}
 {{- $slug := .Params.slug | default .File.ContentBaseName -}}
-{{- $comments := index site.Data.comments $slug -}}
+{{- $comments := index hugo.Data.comments $slug -}}
 
 {{- if $comments }}
 <section id="comments" class="comments-area">
