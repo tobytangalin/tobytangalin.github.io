@@ -17,12 +17,12 @@
 - Posts: `content/blog/<slug>.md`. The section `blog` uses `[permalinks] blog = "/:slug/"`, so URLs are root-level: `/my-post/`.
 - **`slug:` front matter is required on every post.** Hugo derives `.Slug` from the *title* otherwise, which silently changes URLs (e.g. `10.19` instead of `10-19`). Preserve the WordPress slug exactly.
 - `categories: ["uncategorized"]` produces `/category/uncategorized/` (taxonomy permalink).
-- `robotsNoIndex: true` + `sitemap: {disable: true}` for noindex pages (e.g. the wedding itinerary).
+- `robotsNoIndex: true` + `sitemap: {disable: true}` for noindex pages. The wedding itinerary is additionally unlisted: `build: {list: never}` + `outputs: ["HTML"]` keep its URL working for guests while removing it from all listings, feeds and pagination.
 - New posts: `hugo new content blog/my-post.md` (uses `archetypes/blog.md`; ships `draft: true`). See `AUTHORING.md`.
 
 ## Preserve these (SEO/migration invariants)
 - Legacy image URLs: `static/wp-content/uploads/**` must keep exact paths (post bodies reference them, incl. `srcset` variants).
-- `static/wp-json/**` is a frozen copy of the dead REST API — byte-identical, do not regenerate.
+- `static/wp-json/**` is a frozen copy of the dead REST API — byte-identical, do not regenerate. Exception: `wp/v2/posts/670/` (the wedding itinerary) was deleted as a privacy measure.
 - `static/comments/feed/`, `static/*-sitemap.xml`, `static/sitemap_index.xml`, `static/main-sitemap.xsl` are frozen legacy files.
 - `static/author/christophertangalingmail-com/**` are meta-refresh stubs to `/blog/`; the author archive was intentionally dropped (GitHub Pages can't issue 301s).
 - `data/comments/<slug>.json` is the archived WordPress comment threads (59 across 4 posts), rendered read-only by `layouts/_partials/comments.html` + `comment.html`. The `#comment-N` anchors are referenced by the frozen `static/comments/feed/`; don't delete or regenerate.

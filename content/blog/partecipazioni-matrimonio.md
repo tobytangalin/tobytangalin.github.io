@@ -4,12 +4,16 @@ date: 2021-08-15T10:32:46
 lastmod: 2024-01-01T16:29:39
 slug: "partecipazioni-matrimonio"
 description: "Thank you for joining us on this special day! The action starts at Frederiksberg Town Hall at 11:30 AM on August 21 (Saturday). Here is a quick summary of the day: Wedding Ceremony Lunch Canal Tour (optional) Exclusive After-party (optional) The Wedding Ceremony at Frederiksberg Town Hall (11:30 AM – 12:30 NN) Our wedding ceremony"
-categories: ["uncategorized"]
 images: ["https://sitegrammar.com/wp-content/uploads/2021/08/234850694_885306922193175_3693194927946849938_n.jpg"]
 robotsNoIndex: true
 sitemap:
   disable: true
 comments: true
+# Personal page: keep the URL working for guests, but exclude it from every
+# listing/feed/pagination and drop its own RSS output.
+build:
+  list: never
+outputs: ["HTML"]
 ---
 
 Thank you for joining us on this special day! The action starts at Frederiksberg Town Hall at 11:30 AM on August 21 (Saturday).
