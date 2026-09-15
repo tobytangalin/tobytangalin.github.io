@@ -122,6 +122,29 @@ li.comment.bypostauthor {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  ol.comment-list ol.children {
+    margin-left: 0.5em;
+    padding-left: 0.75em;
+  }
+
+  /* Stop indent compounding past the first reply levels. */
+  ol.comment-list ol.children ol.children {
+    margin-left: 0.25em;
+    padding-left: 0.5em;
+  }
+
+  ol.comment-list ol.children ol.children ol.children {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li.comment {
+    margin: 0.75em 0;
+    padding: 0.75em 0.9em;
+  }
+}
+
 #respond.comment-respond {
   margin-top: 2.5em;
 }
