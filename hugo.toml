@@ -77,6 +77,16 @@ disableKinds = ["taxonomy"]
     name = "linkedin"
     url = "https://www.linkedin.com/in/christophertangalin/"
 
+  # Client-side search relevance. Keys are lowercase because Hugo lowercases
+  # config keys and PaperMod reads params.fuseOpts.<name> in lowercase.
+  # threshold 0.15 = precise substring matching over title+summary; body text
+  # is intentionally not indexed or searched.
+  [params.fuseOpts]
+    threshold = 0.15
+    ignorelocation = true
+    keys = ["title", "summary"]
+    minmatchcharlength = 3
+
 [[menu.main]]
   name = "About"
   url = "/about/"
